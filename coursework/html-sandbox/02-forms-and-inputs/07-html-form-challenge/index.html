@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Sandbox</title>
+  </head>
+  <body>
+      <header>
+        <h2>
+          Appartment Search
+        </h2>
+      </header>
+      <main>
+        <form>
+          <div>
+            <label for='location'>Location</label>
+            <input type="text" id="location" placeholder="Enter Location" name="location">
+          </div>
+          <br>
+          <div>
+            <label for='price' min="2000" max="5000">Monthly Price</label>
+            <input 
+                type="range" 
+                id="price" 
+                placeholder="Monthly Price" 
+                name="price"
+                min="1000"
+                max="3000"
+                >
+          </div>
+          <br>
+          <div>
+            <label for='bedrooms'>Number of Bedrooms</label>
+            <input type="number" id="bedrooms" placeholder="Bedrooms" name="bedrooms">
+          </div>
+          <br>
+          <div>
+            <label for='bathrooms'>Number of Bathrooms</label>
+            <input type="number" id="bathrooms" placeholder="Bathrooms" name="bathrooms">
+          </div>
+          <br>
+          <div>
+            <label for='pets'>Pets Allowed</label>
+            <input type="checkbox" id="pets" name="pets">
+          </div>
+          <br>
+          <div>
+            <label for='available'>Date Available</label>
+            <input type="date" id="available" name="available">
+          </div>
+          <br>
+          <button type="submit">Submit</button>
+        </form>
+
+      </main>
+    
+  </body>
+</html>
