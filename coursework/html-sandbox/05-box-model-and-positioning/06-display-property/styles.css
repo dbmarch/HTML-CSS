@@ -1,3 +1,21 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+.none-el{
+  display: none;
+}
+
+.hidden-el {
+  visibility: hidden;
+}
+
+a {
+  display: inline-block;
+  background: lighblue;
+  border: blue 1px solid;
+  padding: 10px;
+  margin: 20px 10px;
+  width: 100px;
+  height: 100px;
+}
