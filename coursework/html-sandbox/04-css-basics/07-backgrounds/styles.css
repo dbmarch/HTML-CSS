@@ -10,6 +10,19 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0 20px;
+  /* background-color: coral; */
+  /* background-image: url(./hero.jpg); */
+  /* background-size: 200px; */
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+
+  /* cover a background with an image */
+  /* background: url('./hero.jpg') no-repeat center/cover; */
+  /* if the image scrolls */
+  /* background-attachment: scroll; */
+
+  background: linear-gradient(to top right, lightblue, darkblue)
 }
 
 .hero h1 {
