@@ -66,3 +66,38 @@ h2 {
   background: #f4f4f4;
   border-bottom: 1px solid #ccc;
 }
+
+
+@media (max-width: 768px ){
+  
+  .header {
+    padding: 20px;  
+    
+    h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    }
+  }
+
+  .main-menu {
+    flex-direction: column;
+    text-align: center;
+    li {
+      border-bottom: 1px solid #ccc;
+    }
+
+    li.last-list-item {
+      border: none;
+    }
+    
+  }
+
+  .main{
+    flex-direction: column-reverse;
+    align-items: center;
+
+    aside {
+      width: 100%;
+    }
+  }
+}
