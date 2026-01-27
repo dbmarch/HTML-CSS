@@ -4,6 +4,25 @@
   box-sizing: border-box;
 }
 
+:root {
+  --container-width: 500px;
+}
+
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  background: #000;
+  width: var(--container-width);
+  height: 200px;
+  display: flex;
+}
+
+.item {
+  height: calc(100% - 20px);
+  /* width: calc(var(--container-width) / 2); */
+  min-width: calc(calc(100% / 5) - 20px);
+  background: coral;
+  margin: 10px;
 }

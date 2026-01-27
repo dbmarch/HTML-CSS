@@ -5,6 +5,75 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.6;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: lightcoral;
+  padding: 0 20px;
+
+  h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 2rem;
+    margin: 25px 0;
+
+    a {
+      color: white;
+
+      &:hover {
+        color: fuchsia;
+      }
+    }
+  }
+}
+
+.section {
+  margin: 50px 0;
+
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 40vh;
+    padding-top: 40px;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
 }

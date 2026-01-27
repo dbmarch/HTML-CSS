@@ -18,4 +18,5 @@ body {
 
 .item-grid {
   display: grid;
+  grid-template-columns: [A] 1fr 1fr 1fr;
 }

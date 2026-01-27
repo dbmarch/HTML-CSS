@@ -19,4 +19,6 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 200px);
   grid-template-rows: repeat(3, 100px);
+  /* justify-content: space-evenly; */
+  place-items: center;
 }
