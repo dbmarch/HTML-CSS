@@ -5,4 +5,12 @@ img {
 .container {
   max-width: 900px;
   margin: 70px auto;
+
+  img{
+    filter: blur(2px);
+    filter: grayscale(90%);
+
+  }
 }
+
+
