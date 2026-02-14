@@ -102,7 +102,14 @@ a[href^="https://"] {
 }
 
 /* 6. Make the first link in the first paragraph and the second paragraph of the second section bold */
-p:first-of-type a:first-of-type,
-p:nth-of-type(2) a:first-of-type {
+.section:nth-of-type(2) p:first-of-type a:first-of-type {
   font-weight: bold;
+  color: purple;
+  font-size: 3rem;
+}
+
+.section:nth-of-type(2) p:nth-of-type(2) {
+  font-weight: bold;
+  color: purple;
+  font-size: 3rem;
 }
