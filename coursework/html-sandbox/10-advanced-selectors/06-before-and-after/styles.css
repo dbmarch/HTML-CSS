@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 .container {
@@ -27,4 +27,30 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
   position: relative;
+}
+
+h2::before {
+  content: "hello";
+  margin-right: 2px;
+}
+h2::after {
+  content: "!!!";
+  color: red;
+}
+
+label.is-required::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+  font-size: 1.2rem;
+}
+
+h2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 200px;
+  background: red;
 }

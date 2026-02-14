@@ -1,19 +1,45 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 /*  Style the first li of it's parent */
+li:first-of-type {
+  font-weight: bold;
+}
 
 /*  Style the last li of it's parent */
 
+li:last-of-type {
+  font-weight: bold;
+  color: green;
+}
+
 /*  Style the 3rd item */
 
+li:nth-of-type(3) {
+  color: aqua;
+}
 /*  Style the 6th item */
-
+li:nth-of-type(6) {
+  color: red;
+}
 /*  Style the even items */
-
+li:nth-of-type(even) {
+  background-color: brown;
+}
 /*  Style the odd items */
+li:nth-of-type(odd) {
+  background-color: green;
+}
 
 /* nth-of-type vs nth-child */
-
+p:nth-of-type(2) {
+  background-color: orange;
+}
 /* Using pseudo classes with pseudo elements */
+
+p:first-of-type::first-letter {
+  font-weight: bold;
+  font-size: 2rem;
+  color: red;
+}

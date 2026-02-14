@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 nav {
@@ -73,19 +73,38 @@ button:hover {
 }
 
 /* Select by type attribute */
-
+input[name="name"] {
+  background-color: lightgreen;
+}
 /* Select by name attribute */
-
+input[type="text"][id="name"] {
+  border-color: green;
+}
 /* Select text type and id of name */
 
 /* Select required inputs */
+input[required] {
+  border-color: red;
+}
 
 /* Select password with a maxlength of 8 */
-
+input[type="password"][maxlength="8"] {
+  background: lightyellow;
+}
 /* Select button with type of submit */
-
+button[type="submit"] {
+  color: yellow;
+}
 /* Select only links that have a href attribute starting with # */
-
+a[href^="#"] {
+  color: green;
+}
 /* Select only links that have a href attribute ending with .com */
-
+a[href$=".com"] {
+  color: purple;
+}
 /* Select only links that have a href attribute containing traversy */
+a[href*="traversy"] {
+  text-decoration: underline;
+  border: 1px solid black;
+}
